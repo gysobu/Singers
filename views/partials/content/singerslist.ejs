@@ -1,0 +1,16 @@
+<div class="container-fluid circles">
+
+        <div class="row">
+            <div class="col-2"></div>
+                <% singers.forEach(item =>{ %>
+          <div class="col-3">
+              <div class="space"></div>
+              <h3 style="font-weight: 300"><%= item.title %></h3>
+              <h5 style="font-weight: 300"><%= item.name %></h5>
+              <a href=""><img  src="images/singers/<%= item.shortname %>.jpg" alt=""></a> 
+          </div>
+          <% }) %>
+          <div class="col-1"></div>
+     </div>
+     </div>
+     
