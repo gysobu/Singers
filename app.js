@@ -9,5 +9,7 @@ app.use(express.static('public'));
 
 app.use(require('./routes/index'))
 app.use(require('./routes/singers'))
+app.use(require('./routes/feedback'))
+app.use(require('./routes/chat'))
 app.listen(4000)
 
