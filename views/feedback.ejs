@@ -5,6 +5,32 @@
 </head>
 <body>
     <% include partials/template/header.ejs %>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <h1 classs="feedback-form-title">Send Us Feedback</h1>
+                <form class="feedback-form">
+                <div class="form-group">
+                  <label for="feedback-form-title">Title</label>
+                  <input type="text" name="" id="feedback-form-title" class="form-control" placeholder="Title for your feedback" aria-describedby="helpId">
+                </div>
+
+                <div class="form-group">
+                  <label for="feedback-form-message">Message</label>
+                  <textarea type="text"id="feedback-form-message" class="form-control" placeholder="Enter your message, then hit the submit" rows=5></textarea>
+                </div>
+             <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            </div>
+            <aside class="col-sm-8" >
+                <div class="maincontent feedback">
+            <h2 class="article-title">Recent Feedback</h2>
+            <div class="feedback-messages"></div>
+            </div>
+                </div>
+            </aside>
+        </div>
+    </div>
     
 </body>
 </html>
